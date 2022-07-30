@@ -2,13 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3007;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost:27017/social',
+  process.env.MONGODB_URI || 'mongodb://localhost:27017/socialnetwork',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
